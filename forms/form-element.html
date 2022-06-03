@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Element</title>
+</head>
+
+<body>
+    <form action="#">
+        <fieldset>
+            <legend>Form Details:</legend>
+            <label for="cars">Choose a car:</label><br>
+            <select name="cars" id="cars" size="3" multiple>
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="fiat">Fiat</option>
+                <option value="audi">Audi</option>
+            </select><br>
+
+            <label for="message">Write your opinion:</label><br>
+            <textarea name="message" id="message" cols="30" rows="10"></textarea><br>
+
+            <label for="browsers">Select from datalist:</label><br>
+            <input list="browsers" name="browser">
+            <datalist id="browsers">
+                <option value="Firefox"></option>
+                <option value="Chrome"></option>
+                <option value="Opera"></option>
+                <option value="Safari"></option>
+            </datalist><br><br>
+
+            <button type="submit" onclick="alert('Your form is submitted.')">Submit</button>
+        </fieldset>
+    </form><br><br>
+
+    <form action="#" oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+        <input type="range" id="a" name="a">
+        +
+        <input type="text" id="b" name="b" value="100">
+        =
+        <output name="x" for="a b"></output><br>
+    </form>
+
+</body>
+
+</html>
