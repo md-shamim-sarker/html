@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Attribute</title>
+</head>
+<body>
+    <form action="#" autocomplete="on" method="get" novalidate>
+        <label for="fname">Fisrt Name: </label><br>
+        <input type="text" name="fname" id="fname" value="Shamim" autofocus required><br>
+        <label for="lname">Last Name: </label><br>
+        <input type="text" name="lname" id="lname" placeholder="Sarker"><br>
+        <label for="fullname">Full Name: </label><br>
+        <input type="text" name="fullname" id="fullname" value="Shamim Sarker" readonly><br>
+        <label for="district">District</label><br>
+        <input type="text" name="district" id="district" value="Lalmonirhat" disabled><br>
+        <label for="thana">Thana</label><br>
+        <input type="text" name="thana" id="district" size="100"><br>
+        <label for="pin">PIN</label><br>
+        <input type="text" name="pin" id="pin" maxlength="4"><br>
+        <label for="date">Date: </label><br>
+        <input type="date" name="date" id="date" max="2010-12-31" min="2000-01-01"><br>
+        <label for="age">Age: </label><br>
+        <input type="range" name="age" id="age" min="18" max="30"><br>
+        <label for="files">Select Files: </label><br>
+        <input type="file" name="files" id="files" multiple><br>
+        <label for="countrycode">Country Code: </label><br>
+        <input type="text" name="countrycode" id="countrycode" pattern="[A-Za-z]{2}" placeholder="BD" title="This Country Code"><br>
+        <label for="phone">Phone Number: </label><br>
+        <input type="tel" name="phone" id="phone" placeholder="123-45-678"  pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"><br><br>
+        <input type="image" src="src/img_submit.gif" alt="Submit" width="48" height="48"><br><br>
+        <input type="submit" formaction="#" value="Submit as Admin" formmethod="post" formtarget="_blank"><br>
+        <input type="submit" value="Submit without validation" formnovalidate="formnovalidate">
+    </form>
+</body>
+</html>
